@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaish's Library Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <h1 class="logo"><a href="#">Library Management</a></h1>
+            <ul class="main-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="wrapper">
+            <div class="container">
+                <h2>Welcome to Vaish's Library Management System</h2>
+                <p>Explore our collection of books and manage your library efficiently.</p>
+            </div>
+        </section>
+
+        <section id="profile" class="wrapper">
+            <div class="container">
+                <h2>Profile</h2>
+                <div class="profile-content">
+                    <img src="/img/profile.jpeg" alt="Profile Picture" class="profile-image">
+                    <div class="profile-info">
+                        <h3>Vaishnavi</h3>
+                        <p>Software Developer</p>
+                        <p>Passionate about books and technology. Developed this library management system to help organize and manage book collections efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="books" class="wrapper">
+            <div class="container">
+                <h2>Books</h2>
+                <div id="search-container">
+                    <input type="search" id="search-input" placeholder="Search book title here..." />
+                    <button id="search">Search</button>
+                </div>
+                <div id="buttons">
+                    <button class="button-value" onclick="filterProduct('all')">All</button>
+                    <button class="button-value" onclick="filterProduct('Basic')">Basic</button>
+                    <button class="button-value" onclick="filterProduct('IT')">IT</button>
+                    <button class="button-value" onclick="filterProduct('CSE')">CSE</button>
+                    <button class="button-value" onclick="filterProduct('ISE')">ISE</button>
+                    <button class="button-value" onclick="filterProduct('Novel')">Novel</button>
+                    <button class="button-value" onclick="filterProduct('Fantasy')">Fantasy</button>
+                </div>
+                <div id="Books"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container footer-content">
+          <div class="footer-info">
+              <h3>Vaish Library Management</h3>
+              <p>Efficiently manage your library with our cutting-edge system.</p>
+              <div class="social-links">
+                  <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                  <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+          <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#profile">Profile</a></li>
+                  <li><a href="#books">Books</a></li>
+                  <li><a href="#footer">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <form id="contact-form">
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                  <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                  <button type="submit">Send Message</button>
+              </form>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <div class="container">
+              <p>&copy; 2024 Vaish Library Management - All rights reserved | Designed By: Vaishnavi</p>
+          </div>
+      </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
